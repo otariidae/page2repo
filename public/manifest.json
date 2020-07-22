@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "page2repo",
+  "version": "0.1.0",
+  "description": "Go to GitHub repo from GitHub Pages",
+  "background": {
+    "scripts": [
+      "browser-polyfill.js",
+      "background.js"
+    ],
+    "persistent": false
+  },
+  "page_action": {
+    "show_matches": [
+      "https://*.github.io/*"
+    ]
+  },
+  "permissions": [
+    "tabs",
+    "https://*.github.io/"
+  ]
+}
