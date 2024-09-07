@@ -5,7 +5,8 @@
     "build": "bun run build.ts"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "latest",
+    "@types/firefox-webext-browser": "^120.0.4"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"
