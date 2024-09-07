@@ -1,23 +1,17 @@
 {
   "name": "page2repo",
-  "version": "0.1.0",
-  "description": "Go to GitHub repo from GitHub Pages",
   "private": true,
   "scripts": {
-    "watch": "webpack --mode=development --watch --config webpack.config.js",
-    "build": "webpack --mode=production --config webpack.config.js",
-    "check": "tsc --noEmit"
+    "build": "bun run build.ts"
   },
   "devDependencies": {
-    "@octokit/rest": "^16.43.2",
-    "@octokit/types": "^5.1.0",
-    "@types/firefox-webext-browser": "^70.0.1",
-    "copy-webpack-plugin": "^6.0.2",
-    "ts-config-webpack-plugin": "^2.0.0",
-    "typescript": "^3.9.5",
-    "webextension-polyfill": "^0.6.0",
-    "webpack": "^4.43.0",
-    "webpack-cli": "^3.3.11"
+    "@types/bun": "latest"
   },
-  "dependencies": {}
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@octokit/rest": "^21.0.2",
+    "webextension-polyfill": "^0.12.0"
+  }
 }
